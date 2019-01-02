@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wooden Rings Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">  
+  <!-- Import Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import materialize.css -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <style>
+    header {
+      top: 0;
+    }
+    .logo {
+      height: auto !important;
+      max-width: 180px !important;
+      top: 3px;
+    }
+    @media screen and (max-width: 600px) {
+      .logo {
+        max-width: 150px !important;
+        top: 5px;
+      }
+    }
+
+    /* label color */
+    .input-field label {
+      color: rgb(117, 117, 117);
+    }
+   /* label focus color */
+    .input-field input[type=email]:focus + label {
+      color: #DE5715 !important;
+    }
+   /* label underline focus color */
+    .input-field input[type=email]:focus {
+      border-bottom: 1px solid #DE5715 !important;
+      box-shadow: 0 1px 0 0 rgba(222, 88, 21, 0.5) !important;
+    }
+   /* valid color */
+    .input-field input[type=email].valid {
+      border-bottom: 1px solid steelblue;
+      box-shadow: 0 1px 0 0 steelblue;
+    }
+   /* invalid color */
+    .input-field input[type=email].invalid {
+      border-bottom: 1px solid red;
+      box-shadow: 0 1px 0 0 red;
+    }
+   /* icon prefix focus color */
+    .input-field .prefix.active {
+      color: rgb(222, 88, 21);
+    }
+
+    #product .icon {
+      padding-top: 15px;
+      font-size: 3.5em;
+    }
+    
+    #product h5 {
+      font-weight: 600;
+    }
+
+    .vidCont {
+      max-width: 800px;
+    }
+    #vidCont {
+      padding-top: 35px;
+    }
+
+    #store {
+      padding-top: 75px;
+    }
+
+    .details {
+      padding-top: 8px;
+    }
+
+    .card-content p {
+      height: 100px;
+      font-weight: 300;
+    }
+
+    #footer {
+      position: relative;
+      height: 75px;
+    }
+
+    .copyR {
+      /* padding-top: 50px; */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and NavBar -->
+  <header id="header">
+    <ul class="sidenav grey lighten-2" id="mobile-menu">
+      <li><a href="#product">Product</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#store">Store</a></li>
+    </ul>
+    <div class="navbar-fixed ">
+      <nav id="nav-bar" class="grey lighten-3 z-depth-1">
+        <div class="nav-wrapper">
+          <div class="container">
+            <img src="./assets/logo2.png" id="header-img" class="logo brand-logo" alt="SlyDingo Logo">
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons orange-text text-darken-4">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="black-text nav-link" href="#product">Product</a></li>
+              <li><a class="black-text nav-link" href="#features">Features</a></li>
+              <li><a class="black-text nav-link" href="#store">Store</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End of Header and NavBar -->
+  
+  <!-- Title with Email Form --> <!-- action url (https://www.freecodecamp.com/email-submit) -->
+  <section>
+    <div class="row">
+      <div class="col s12 center-align">
+        <h5>Handcrafted, Unique Exotic wood Rings</h5>
+        <p>Submit your E-Mail to get Updated</br>Notifications on new Ring Designs, and Special Offers!</p>
+      </div>
+      <form class="col s12" id="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="row">
+          <div class="input-field col l4 offset-l4 m6 offset-m3 s8 offset-s2">
+            <i class="material-icons prefix">email</i>
+            <input id="email" type="email" class="validate" placeholder="example@mail.com" name="email">
+            <!-- <label for="email">Email</label> -->
+            <span class="helper-text center-align" data-error="wrong" data-success="right"><h6 style="padding-right: 40px">Get Started!</h6></span>
+          </div>
+        </div>
+        <div class="row center-align">
+          <input id="submit" class="btn waves-effect waves-light orange darken-4" type="submit" value="Submit">
+            
+          <!-- </input><i class="material-icons right">send</i> -->
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- End of Title with Email Form -->
+
+  <!-- Services -->
+  <section id="product" class="section scrollspy">
+    <div class="row container">
+      <div class="col m1 offset-m1 icon hide-on-small-only">
+        <i class="fab fa-gripfire"></i>
+      </div>
+      <div class="col m8 offset-m1 s12">
+        <h5>Exotic High Quality Woods and Materials</h5>
+        <p>
+          These woods include Koa, Ironwood, Leopard wood, Whiskey Barrel, Rosewood, Zebrawood, and many more types of wood.
+          Materials include Titanium, Carbon Fiber, Tungsten, Antler, Fossilized Bone and Teeth, Meteorite, and gems.
+        </p>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col m1 offset-m1 icon hide-on-small-only">
+        <i class="fas fa-shipping-fast"></i>
+      </div>
+      <div class="col m8 offset-m1 s12">
+        <h5>Fast Shipping with Quality Packaging</h5>
+        <p>
+          These Rings are Crafted with Quality Assurance using methods perfected.
+          And with our Packaging and Shipping we assure you that you get your ring quickly as possible.
+        </p>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="col m1 offset-m1 icon hide-on-small-only">
+        <i class="fas fa-thumbs-up"></i>
+      </div>
+      <div class="col m8 offset-m1 s12">
+        <h5>Quality Assurance</h5>
+        <p>
+          With every ring you purchase, we will ensure there are no flaws, or damages.
+          And we will provide a warranty that will make it possible for you to get everything you want from a ring.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End of Services -->
+
+  <!-- Video Container -->
+  <section id="features" class="section scrollspy">
+    <div id="vidCont">
+      <div class="container vidCont">
+        <div class="video-container">
+          <iframe id="video" width="500" height="480" src="https://www.youtube.com/embed/Asfq1iI1Ras" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Video Container -->
+
+  <!-- Purchase -->
+  <section id="store" class="section scrollspy">
+    <div class="row container">
+      <div class="col s12 m6 l4">
+        <div class="card grey">
+          <div class="card-image">
+            <img src="./assets/ring1.jpg" alt="Wooden Ring 1">
+          </div>
+          <div class="card-content grey-text text-darken-4">
+            <span class="card-title center-align"><b>Wooden Ring</b></span>
+            <p>This Ring is made from Buckeye Burl with a Copper and Malachite inlay.
+            Then UV Resin Coated with a high polished finish.</p>
+          </div>
+          <div class="card-action center-align">
+            <a class="waves-effect waves-light btn orange darken-4">&nbsp;Buy&nbsp;</a>
+            <a class="waves-effect waves-light btn orange darken-4">&nbsp;Details&nbsp;</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card grey">
+          <div class="card-image">
+            <img src="./assets/ring2.jpg" alt="Wooden Ring 1">
+          </div>
+          <div class="card-content white-text grey-text text-darken-4">
+            <span class="card-title center-align"><b>Wooden Ring</b></span>
+            <p>This Ring is made from Red Oak with a Copper and crushed Turquoise.
+            Then with several thin coats of CA Glue with a high polished finish.</p>
+          </div>
+          <div class="card-action center-align">
+            <a class="waves-effect waves-light btn orange darken-4">&nbsp;Buy&nbsp;</a>
+            <a class="waves-effect waves-light btn orange darken-4">&nbsp;Details&nbsp;</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card grey">
+          <div class="card-image">
+            <img src="./assets/ring3.jpg" alt="Wooden Ring 1">
+          </div>
+          <div class="card-content grey-text text-darken-4">
+            <span class="card-title center-align"><b>Wooden Ring</b></span>
+            <p>This Ring is made from Ironwood with a Steel and crushed Turquoise.
+            Then with several thin coats of CA Glue with a high polished finish.</p>
+          </div>
+          <div class="card-action center-align">
+            <a class="waves-effect waves-light btn orange darken-4">&nbsp;Buy&nbsp;</a>
+            <a class="waves-effect waves-light btn orange darken-4">&nbsp;Details&nbsp;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Purchase -->
+
+  <!-- Footer -->
+  <section id="footer" class="grey darken-2 valign-wrapper">
+    <div class="row container">
+      <div class=" col s12 center-align">
+          <span>&copy; 2018 SlyDingo Wooden Rings</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>$(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.scrollspy').scrollSpy();
+  });/* spacer */</script>
+    <!-- FCC Test Bundle -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
